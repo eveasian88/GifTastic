@@ -1,5 +1,5 @@
 // topic theme and make an array
-var topics = ["Lord of the Rings", "Star Wars", "The Matrix", "Mission Impossible", "The Dark Night", "Jason Bourne", "Games of Thrones", "Indiana Jones", "Back To the Future", "Mad Max"];
+var topics = ["Lord of the Rings", "Star Wars", "Mission Impossible", "The Dark Night", "The Matrix", "Jason Bourne", "Games of Thrones", "Indiana Jones", "Mad Max", "Lost"];
 
 var button;
 var newTopic = ""; // new topic that will be added via the input field 
