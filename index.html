@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <title>HW Giftastic! </title>
-    
-    <meta charset="utf-8">
+<head>
+
+	<title>GifTastic! </title>
+
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Giftastic!</title>
-	
+	<title>GifTastic!</title>
+
 	<!-- bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	 crossorigin="anonymous">
+	<!-- font style for this theme -->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-			
-  </head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <body>
-    <div class="container-fluid" id="wrap">
-    	
-    
-	    <!-- nav area with title 100% -->
-	    <div class="row">
-	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="header">
-	    		<h3 id="title">GifTastic!</h3>
-	    	</div>
-	    </div>
-	    
-		<!-- button area 100% -->
+</head>
+
+<body>
+	<div class="container-fluid" id="wrap">
+
+
+		<!-- nav area with title  -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="header">
+				<h3 id="title">GifTastic!</h3>
+			</div>
+		</div>
+
+		<!-- button area -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="buttonArea"></div>
 		</div>
@@ -36,52 +38,32 @@
 		<!-- gif area 9 cols -->
 		<div class="row">
 			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="gifArea"></div>
-			
-		<!-- input area 3 cols -->		
+
+			<!-- input area 3 cols -->
 			<div class="col-xs-3 col-sm-3 col-md-3col-lg-3">
 				<form>
-				  <fieldset>
-				  	<label for="topic-input">Add a Topic</label><br>
-				    <input type="text" placeholder="Type something…" id="topic-input">
-				    <button type="submit" class="btn submit" data="submitBtn">Submit</button>
-				  </fieldset>
+					<fieldset>
+						<label for="topic-input">Add Any Topic</label><br>
+						<input type="text" placeholder="Type something…" id="topic-input">
+						<button type="submit" class="btn submit" data="submitBtn">Submit</button>
+					</fieldset>
 				</form>
 			</div>
-		</div>	
-		
+		</div>
 
-<!-- // read homework directions twice before beginning
-// get an API key for this site
-
-    fgPnlcaP119kWicPGGCVVNd2liHNjqWl
-
-// create an array of strings related to a topic that interests you
-// save it to a variable called topics
-// think about what theme i like
-// app should take the topics in this array and create buttons in your HTML
-// use a loop to append a button for each string in the array
-// when user clicks the page should grab 10 static non-animated gif images
-// when user clicks the still GIPHY images, the gif animates
-// if user clicks the gif again, it should stop moving
-// under every gif, display its rating 
-// only once you get images displaying with button presses should you move on to continue 
-
-// add a form to your page that takes the value from a user input box and adds it into your topics array
-// then make a function call that takes each topic in the array to remake the buttons on the page -->
-
-</div>
-<!-- Footer -->
-<footer class="footer">
-      <div class="container">
-        <span class="credits">Giftastic! 2018 Susye Weng-Reeder</span>
-      </div>
-</footer>
+	</div>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<span class="credits">&copy; 2018 Susye Weng-Reeder</span>
+		</div>
+	</footer>
 
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="css/javascript/app.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="css/javascript/app.js"></script>
 </body>
 
 </html>
