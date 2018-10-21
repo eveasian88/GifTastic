@@ -15,6 +15,7 @@ var buttonGenerator = function () {
     };
 }
 
+
 // user clicks on a generated button, which generates 10 static, non-animated gif images from the GIPHY API
 $("#buttonArea").on("click", ".btn", function () {
     var thing = $(this).attr("data");
@@ -26,40 +27,9 @@ $("#buttonArea").on("click", ".btn", function () {
 
     }).done(function (response) {
         console.log(response);
-        // console.log to check
+    }
 
-        var results = response.data;
-
-        for (var i = 0; i < results.length; i++) {
-            // a div is created to hold a gif of any topic
-            var topicDiv = $("<div>");
-
-            // under every gif, display its rating
-            var p = $("<p>");
-            p.text(results[i].rating);
-            var p = $("<p>").text("Rating: " + results[i].rating);
-
-            // add a CSS style to create colored borders around the gifs
-            var topicImage = $("<img>").addClass("orangeBorder");
-
-            // add states of animate and still which will be toggled 
-            topicImage.attr("src", results[i].images.fixed_height_still.url);
-            topicImage.attr("data-still", results[i].images.fixed_height_still.url);
-            topicImage.attr("data-animate", results[i].images.fixed_height.url)
-            topicImage.attr("data-state", "still")
-            topicImage.addClass("gif");
-
-            // image is appended to the div
-            topicDiv.append(topicImage);
-            // rating is appended to the div below the gif
-            topicDiv.append(p);
-            // new images will be placed at the beginning (top) of the containing gif area
-            $("#gifArea").prepend(topicDiv);
-        }
-    })
-})
-
-
+// console.log(response) to check
 
 
 // under every gif, display it's rating
