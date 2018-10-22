@@ -1,5 +1,5 @@
-// top movies and tv shows theme and make an array
-var topics = ["Harry Potter", "The Lord of the Rings", "Star Wars", "Pirates of the Caribbean", "Toy Story", "Mission Impossible", "James Bond", "Breaking Bad", "Games of Thrones", "House of Cards", "Orange is the New Black", "Lost", "The Office"];
+// top movie theme and make an array
+var topics = ["Harry Potter", "The Lord of the Rings", "Star Wars", "Pirates of the Caribbean", "Toy Story", "The Dark Knight", "Mission Impossible", "X-Men", "James Bond"];
 
 var button;
 var newTopic = ""; // new topic that will be added via input field 
@@ -20,7 +20,7 @@ $("#button-area").on("click", ".btn", function () {
     var thing = $(this).attr("data");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl";  // use my API key for GIPHY here
    
-
+    // standard AJAX call to get request
     $.ajax({
         url: queryURL,
         method: "GET"

@@ -17,26 +17,26 @@ html {
   
   #header {
     background-color:black;
-    height:70px;
+    height: 70px;
   }
   
   #title {
     color:#fff;
     text-align:center;
     font-family: 'Pacifico', cursive;
-    padding-top:16px;
+    padding-top: 16px;
   }
   
-  #buttonArea{
-    margin-top:10px;
+  #button-area{
+    margin-top: 10px;
   }
   
   .btn {
-    margin:3px;
+    margin: 3px;
   }
   
-  #gifArea {
-    margin-top:20px;
+  #gif-area {
+    margin-top: 20px;
   }
   
   .orangeBorder {
