@@ -6,7 +6,6 @@ html {
   
   body {
     background-color:#262626;
-      /* margin bottom by footer height */
     margin-bottom: 60px;
   }
   
@@ -16,15 +15,18 @@ html {
   }
   
   #header {
-    background-color:black;
-    height: 70px;
+    background-color: black;
+    background-image: url("../images/girlsOnFire.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
   }
   
   #title {
     color:#fff;
     text-align:center;
     font-family: 'Pacifico', cursive;
-    padding-top: 16px;
+    padding-top: 30px;
   }
   
   #button-area{
@@ -67,3 +69,11 @@ html {
   .clear {
     clear: both;
   }
+
+  /* trying to make all gifs the same size */
+  .topic-img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid #FFC107;
+    border-radius: 10px; 
+}

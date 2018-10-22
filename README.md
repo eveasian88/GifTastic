@@ -1,5 +1,5 @@
 ## GIPHY API
-A dynamic web page that populates with gifs from the best movie series of all time. Click a button or use the search to features and watch Gifs of all topics populate. Click on the picture and watch the gif in action.
+A dynamic web page that populates with gifs from the best girl power movies of all time. Click a button or use the search to feature and watch gifs of all topics populate. Click on the picture and watch the gif in action.
 
 
 ## Technologies Utilized

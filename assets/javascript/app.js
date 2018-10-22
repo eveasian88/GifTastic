@@ -1,5 +1,5 @@
-// top movie theme and make an array
-var topics = ["Harry Potter", "The Lord of the Rings", "Star Wars", "Pirates of the Caribbean", "Toy Story", "The Dark Knight", "Mission Impossible", "X-Men", "James Bond"];
+// array of top ten girl power movies
+var topics = ["Miss Congeniality", "Mulan", "The Hunger Games", "Wonder Woman", "Mad Max: Fury Road", "Thelma and Louise", "Bend it Like Beckham", "Little Women"];
 
 var button;
 var newTopic = ""; // new topic that will be added via input field 
