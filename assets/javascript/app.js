@@ -18,7 +18,7 @@ var buttonGenerator = function () {
 // user clicks on a generated button, which generates 10 static, non-animated gif images from the GIPHY API
 $("#button-area").on("click", ".btn", function () {
     var thing = $(this).attr("data");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl";  // use my API code for GIPHY here
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl";  // use my API key for GIPHY here
    
 
     $.ajax({
@@ -79,7 +79,8 @@ $("#gif-area").on("click", ".gif", function (event) {
 })
 
 
-// form takes the value from the input box and adds it into the topics array. buttonGenerator function is called that takes each topic in the array remakes the buttons on the page
+// form takes the value from input box and adds it into the topics array
+// buttonGenerator function is called that takes each topic in the array and remakes buttons on page
 $(".submit").on("click", function (event) {
     event.preventDefault();
 
