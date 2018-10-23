@@ -10,7 +10,7 @@ var buttonGenerator = function () {
     $("#button-area").empty();
     // loops through the array and creates buttons
     for (i = 0; i < topics.length; i++) {
-        button = $("<button type=" + "button" + ">" + topics[i] + "</button>").addClass("btn btn-warning").attr("data", topics[i]);
+        button = $("<button type=" + "button" + ">" + topics[i] + "</button>").addClass("btn btn-light").attr("data", topics[i]);
         $("#button-area").append(button);
     };
 }
@@ -30,7 +30,7 @@ $("#button-area").on("click", ".btn", function () {
         console.log(response);
 
         var results = response.data;
-        console.log(response.data, "response.data");
+        console.log(response.data, "");
 
         for (var i = 0; i < results.length; i++) {
             
@@ -46,8 +46,7 @@ $("#button-area").on("click", ".btn", function () {
             var topicImage = $("<img>").addClass("pinkBorder");
 
             // add states of animate and still which will be toggled 
-            topicImage.attr("src", results[i].images.fixed_height.url);
-            topicImage.attr("src", results[i].images.fixed_width.url);
+            topicImage.attr("src", results[i].images.fixed_height_still.url);
             topicImage.attr("data-still", results[i].images.fixed_height_still.url);
             topicImage.attr("data-animate", results[i].images.fixed_height.url)
             topicImage.attr("data-state", "still")

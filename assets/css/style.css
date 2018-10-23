@@ -4,55 +4,62 @@ html {
     min-height: 100%;
   }
   
-  body {
+body {
     background-color:#262626;
     margin-bottom: 60px;
   }
   
-  #wrap {
+#wrap {
     background-color:#262626;
     color:#646464;
   }
   
-  #header {
+#header {
     background-color: black;
-    background-image: url("../images/girlsOnFire.gif");
+    background-image: url("../images/giphy.gif");
     /* background-repeat: no-repeat; */
     background-position: center;
     height: 100px;
   }
   
-  #title {
+#title {
     color:#fff;
     text-align:center;
     font-family: 'Shadows Into Light', cursive;
     padding-top: 30px;
   }
   
-  #button-area{
+#button-area{
     margin-top: 10px;
   }
   
-  .btn {
+.btn-light {
+  color:#fff;
+  font-size: 18px;
+  font-family: 'Shadows Into Light', cursive;
+  background: hotpink;
+}
+
+.btn {
     margin: 3px;
   }
-  
-  #gif-area {
+
+#gif-area {
     margin-top: 20px;
   }
   
-  .pinkBorder {
+.pinkBorder {
     border-radius: 5px;
     border: 2px solid pink;
   }
   
-  .submit {
+.submit {
     background-color: #262626;
     color:white;
     border:1px solid #646464;
   }
   
-  .footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -62,16 +69,16 @@ html {
     background-color: black;
   }
   
-  .credits {
+.credits {
     font-size: .8em;
   }
 
-  .clear {
+.clear {
     clear: both;
   }
 
-  /* trying to make all gifs the same size */
-  /* .topic-img {
+/* trying to make all gifs the same size */
+/* .topic-img {
     width: 300px;
     height: 300px;
     border: 4px solid pink;
