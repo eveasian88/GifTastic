@@ -17,7 +17,7 @@ html {
   #header {
     background-color: black;
     background-image: url("../images/girlsOnFire.gif");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
     height: 100px;
   }
@@ -25,7 +25,7 @@ html {
   #title {
     color:#fff;
     text-align:center;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Shadows Into Light', cursive;
     padding-top: 30px;
   }
   
@@ -41,9 +41,9 @@ html {
     margin-top: 20px;
   }
   
-  .orangeBorder {
+  .pinkBorder {
     border-radius: 5px;
-    border: 2px solid orange;
+    border: 2px solid pink;
   }
   
   .submit {
@@ -71,9 +71,9 @@ html {
   }
 
   /* trying to make all gifs the same size */
-  .topic-img {
+  /* .topic-img {
     width: 300px;
     height: 300px;
-    border: 4px solid #FFC107;
+    border: 4px solid pink;
     border-radius: 10px; 
-}
+} */

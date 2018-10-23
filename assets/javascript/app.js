@@ -1,5 +1,5 @@
 // array of top ten girl power movies
-var topics = ["Miss Congeniality", "Mulan", "The Hunger Games", "Wonder Woman", "Mad Max: Fury Road", "Thelma and Louise", "Bend it Like Beckham", "Little Women"];
+var topics = ["Miss Congeniality", "The Hunger Games", "Mulan", "Wonder Woman", "Mad Max: Fury Road", "Thelma and Louise", "Frida", "Bend it Like Beckham", "Eat Pray Love"];
 
 var button;
 var newTopic = ""; // new topic that will be added via input field 
@@ -18,19 +18,22 @@ var buttonGenerator = function () {
 // user clicks on a generated button, which generates 10 static, non-animated gif images from the GIPHY API
 $("#button-area").on("click", ".btn", function () {
     var thing = $(this).attr("data");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl";  // use my API key for GIPHY here
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl&limit=10";  // use my API key for GIPHY here
    
     // standard AJAX call to get request
     $.ajax({
         url: queryURL,
         method: "GET"
+    })
 
-    }).done(function (response) {
+    .done(function (response) {
         console.log(response);
 
         var results = response.data;
+        console.log(response.data, "response.data");
 
         for (var i = 0; i < results.length; i++) {
+            
             // a div is created to hold a gif of any topic
             var topicDiv = $("<div>");
 
@@ -40,10 +43,11 @@ $("#button-area").on("click", ".btn", function () {
             var p = $("<p>").text("Rating: " + results[i].rating);
 
             // add a CSS style to create colored borders around the gifs
-            var topicImage = $("<img>").addClass("orangeBorder");
+            var topicImage = $("<img>").addClass("pinkBorder");
 
             // add states of animate and still which will be toggled 
-            topicImage.attr("src", results[i].images.fixed_height_still.url);
+            topicImage.attr("src", results[i].images.fixed_height.url);
+            topicImage.attr("src", results[i].images.fixed_width.url);
             topicImage.attr("data-still", results[i].images.fixed_height_still.url);
             topicImage.attr("data-animate", results[i].images.fixed_height.url)
             topicImage.attr("data-state", "still")
@@ -96,3 +100,6 @@ $(".submit").on("click", function (event) {
 
 
 buttonGenerator();
+
+// want to make all gifs the same width and height
+// want to only populate ten gifs on page
