@@ -1,86 +1,80 @@
 /* girl power color since it is october */
 html {
-    position: relative;
-    min-height: 100%;
-  }
+  position: relative;
+  min-height: 100%;
+}
   
 body {
-    background-color:#262626;
-    margin-bottom: 60px;
-  }
+  background-color:#262626;
+  margin-bottom: 60px;
+}
   
 #wrap {
-    background-color:#262626;
-    color:#646464;
-  }
+  background-color:#262626;
+  color:#646464;
+}
   
 #header {
-    background-color: black;
-    background-image: url("../images/giphy.gif");
-    /* background-repeat: no-repeat; */
-    background-position: center;
-    height: 100px;
-  }
+  background-color: black;
+  background-image: url("../images/giphy.gif");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  height: 100px;
+}
   
 #title {
-    color:#fff;
-    text-align:center;
-    font-family: 'Shadows Into Light', cursive;
-    padding-top: 30px;
-  }
+  color: #ffffff;
+  text-align:center;
+  font-family: 'Shadows Into Light', cursive;
+  padding-top: 30px;
+}
   
 #button-area{
-    margin-top: 10px;
-  }
+  margin-top: 10px;
+}
   
 .btn-light {
-  color:#fff;
+  color: #ffffff;
   font-size: 18px;
   font-family: 'Shadows Into Light', cursive;
-  background: hotpink;
+  background: rgb(232, 131, 148);
 }
 
 .btn {
-    margin: 3px;
-  }
+  margin: 3px;
+}
 
 #gif-area {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
+}
   
 .pinkBorder {
-    border-radius: 5px;
-    border: 2px solid pink;
-  }
+  border-radius: 5px;
+  border: 2px solid rgb(232, 131, 148);
+}
   
 .submit {
-    background-color: #262626;
-    color:white;
-    border:1px solid #646464;
-  }
+  background-color: #262626;
+  color:#ffffff;
+  border:1px solid #646464;
+}
   
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    text-align:center;
-    background-color: black;
-  }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align:center;
+  background-color: black;
+}
   
 .credits {
-    font-size: .8em;
-  }
+  font-family: 'Shadows Into Light', cursive;
+  color: rgb(232, 131, 148);
+  font-size: .8em;
+}
 
 .clear {
-    clear: both;
-  }
-
-/* trying to make all gifs the same size */
-/* .topic-img {
-    width: 300px;
-    height: 300px;
-    border: 4px solid pink;
-    border-radius: 10px; 
-} */
+  clear: both;
+}

@@ -1,5 +1,5 @@
 // array of top ten girl power movies
-var topics = ["Miss Congeniality", "The Hunger Games", "Mulan", "Wonder Woman", "Mad Max: Fury Road", "Thelma and Louise", "Frida", "Bend it Like Beckham", "Eat Pray Love"];
+var topics = ["Miss Congeniality", "The Hunger Games", "Mulan", "Wonder Woman", "Mad Max: Fury Road", "Thelma and Louise", "Frida", "Bend it Like Beckham", "Erin Brockovich"];
 
 var button;
 var newTopic = ""; // new topic that will be added via input field 
@@ -18,7 +18,7 @@ var buttonGenerator = function () {
 // user clicks on a generated button, which generates 10 static, non-animated gif images from the GIPHY API
 $("#button-area").on("click", ".btn", function () {
     var thing = $(this).attr("data");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl&limit=10";  // use my API key for GIPHY here
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl&limit=5";  // use my API key for GIPHY here
    
     // standard AJAX call to get request
     $.ajax({
@@ -54,8 +54,13 @@ $("#button-area").on("click", ".btn", function () {
 
             // image is appended to the div
             topicDiv.append(topicImage);
+
+            // image to display next to each other
+            topicDiv.css("display", "inline-block");
+
             // rating is appended to the div below the gif
             topicDiv.append(p);
+            
             // new images will be placed at the beginning (top) of the containing gif area
             $("#gif-area").prepend(topicDiv);
         }
@@ -78,7 +83,6 @@ $("#gif-area").on("click", ".gif", function (event) {
         $(this).attr("src", $(this).attr("data-still"));
         $(this).attr("data-state", "still");
     }
-
 })
 
 
@@ -93,12 +97,9 @@ $(".submit").on("click", function (event) {
     // new topic is added to the topics array 
     topics.push(newTopic);
     console.log(topics);
+   
     // call the function that creates the new button
     buttonGenerator();
 });
 
-
 buttonGenerator();
-
-// want to make all gifs the same width and height
-// want to only populate ten gifs on page
