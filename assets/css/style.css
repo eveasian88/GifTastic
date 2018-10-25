@@ -32,12 +32,16 @@ body {
 #button-area{
   margin-top: 10px;
 }
-  
+
 .btn-light {
   color: #ffffff;
   font-size: 18px;
   font-family: 'Shadows Into Light', cursive;
-  background: rgb(232, 131, 148);
+  background: rgb(210, 119, 134);
+}
+
+.btn-light:hover {
+  color: black;
 }
 
 .btn {
@@ -54,7 +58,7 @@ body {
 }
   
 .submit {
-  background-color: #262626;
+  background-color: rgb(232, 131, 148);
   color:#ffffff;
   border:1px solid #646464;
 }
@@ -71,7 +75,8 @@ body {
   
 .credits {
   font-family: 'Shadows Into Light', cursive;
-  color: rgb(232, 131, 148);
+  /* color: rgb(232, 131, 148); */
+  color: #646464;
   font-size: .8em;
 }
 

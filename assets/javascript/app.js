@@ -1,5 +1,5 @@
 // array of top ten girl power movies
-var topics = ["Miss Congeniality", "The Hunger Games", "Mulan", "Wonder Woman", "Mad Max: Fury Road", "Thelma and Louise", "Frida", "Bend it Like Beckham", "Erin Brockovich"];
+var topics = ["Miss Congeniality", "The Hunger Games", "Mulan", "Wonder Woman", "Mad Max: Fury Road", "A League of Their Own", "Frida", "Bend it Like Beckham", "Erin Brockovich", "Legally Blonde", "Hidden Figures"];
 
 var button;
 var newTopic = ""; // new topic that will be added via input field 
@@ -18,7 +18,7 @@ var buttonGenerator = function () {
 // user clicks on a generated button, which generates 10 static, non-animated gif images from the GIPHY API
 $("#button-area").on("click", ".btn", function () {
     var thing = $(this).attr("data");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl&limit=5";  // use my API key for GIPHY here
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl&limit=10";  // my API key for GIPHY here
    
     // standard AJAX call to get request
     $.ajax({
@@ -60,7 +60,7 @@ $("#button-area").on("click", ".btn", function () {
 
             // rating is appended to the div below the gif
             topicDiv.append(p);
-            
+
             // new images will be placed at the beginning (top) of the containing gif area
             $("#gif-area").prepend(topicDiv);
         }
