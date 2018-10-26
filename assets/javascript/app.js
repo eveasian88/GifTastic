@@ -19,7 +19,8 @@ var buttonGenerator = function () {
 $("#button-area").on("click", ".btn", function () {
     var thing = $(this).attr("data");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thing + "&api_key=fgPnlcaP119kWicPGGCVVNd2liHNjqWl&limit=10";  // my API key for GIPHY here
-   
+    
+
     // standard AJAX call to get request
     $.ajax({
         url: queryURL,
@@ -94,6 +95,15 @@ $(".submit").on("click", function (event) {
     console.log("submit");
     // sets inputted value to newTopic 
     newTopic = $("#topic-input").val();
+
+    // line to make sure if user doesn't type input, can't build button
+    if (newTopic.length < 1 || topics.includes(newTopic)) {
+        return;
+    }
+    
+    // make sure to clear out input after building a button
+    $("#topic-input").val("");
+
     // new topic is added to the topics array 
     topics.push(newTopic);
     console.log(topics);
