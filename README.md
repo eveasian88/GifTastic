@@ -4,5 +4,3 @@ A dynamic web page that populates with gifs from the best Girl Power Movies of a
 
 ## Technologies Utilized
 HTML5 • Bootstrap4 • CSS3 • JavaScript • JQuery • API • AJAX
-
-https://eveasian88.github.io/GifTastic/
